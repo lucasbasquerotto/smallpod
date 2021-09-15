@@ -1,0 +1,32 @@
+templates:
+
+- src: "html/template.html"
+  dest: "html/dynamic.html"
+  params:
+    title: "{{ params.dynamic_page_title }}"
+    content: |
+      <!-- HTML Code -->
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>src</td>
+          <td>html/template.html</td>
+        </tr>
+        <tr>
+          <td>dest</td>
+          <td>html/dynamic.html</td>
+        </tr>
+        <tr>
+          <td>params.title</td>
+          <td>{{ params.dynamic_page_title }}</td>
+        </tr>
+        <tr>
+          <td>params.content</td>
+          <td>(this)</td>
+        </tr>
+      </table>
+
+      <p>This dynamic page was generated from the template: <a href="/template.html">/template.html</a></p>
