@@ -2,6 +2,7 @@ templates:
 
 - src: "html/template.html"
   dest: "html/dynamic.html"
+  mode: "644"
   params:
     title: "{{ params.dynamic_page_title }}"
     content: |
